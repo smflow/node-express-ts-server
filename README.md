@@ -26,14 +26,17 @@ Follow these steps to get started with the project:
 
 ```bash
 git clone https://github.com/smflow/node-express-ts-server.git ./node-app
+```
 
 2. **Install dependencies:**
 
 ```bash
 cd node-app
 npm install
+```
 
 3. **Run dev server:**
 
 ```bash
 npm run dev
+```
