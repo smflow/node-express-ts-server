@@ -1,4 +1,4 @@
-import { SafeParseReturnType, z } from "zod";
+import { z } from "zod";
 
 export const validator = <T>(e: z.ZodObject<any>, data: any): T => {
   const parsed = e.safeParse(data);

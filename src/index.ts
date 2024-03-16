@@ -10,18 +10,17 @@ import { errorHandler } from "./middlewares/errorHandler.middleware";
 
 const app = express();
 expand(dotenv.config());
-((process as any).appConfig = config);
 
+((process as any).appConfig = config);
 
 // app config
 app.set("view engine", "ejs");
 
 // Middlewares
-
 // Body parsers
 app.use([
-  bodyParser.json({ limit: "10mb" }),
-  bodyParser.urlencoded({ extended: false, limit: "10mb" }),
+  bodyParser.json({ limit: config.bodyParserLimit }),
+  bodyParser.urlencoded({ extended: false, limit: config.bodyParserLimit }),
 ]);
 
 app.use(config.prefix, express.static("public"));

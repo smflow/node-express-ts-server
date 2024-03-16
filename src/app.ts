@@ -2,8 +2,10 @@ import express from "express";
 
 import { routers } from "./routers";
 
-export const appRouter = express.Router();
+const r = express.Router();
 
-appRouter.get("/", (_req, res) => res.render("home.ejs"));
+r.get("/", (_req, res) => res.render("home.ejs"));
 
-appRouter.use(routers);
+r.use(routers);
+
+export const appRouter = r;
