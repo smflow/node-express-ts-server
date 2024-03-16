@@ -1,0 +1,45 @@
+{
+  "name": "node-express-ts-server",
+  "version": "1.0.0",
+  "description": "A Node.js, Express.js and typescript web server",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smflow/node-express-ts-server.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "typescript",
+    "node",
+    "web",
+    "server"
+  ],
+  "author": "Maruf hossan <marufmunna800@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smflow/node-express-ts-server/issues"
+  },
+  "homepage": "https://github.com/smflow/node-express-ts-server#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.28",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "dotenv-expand": "^11.0.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "zod": "^3.22.4"
+  }
+}

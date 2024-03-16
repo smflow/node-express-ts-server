@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('includes/head.ejs') %>
+    <title>node, express and typescript server</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <meta
+      name="description"
+      content="node.js, express.js and typescript server scaffold"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Server running...</h1>
+
+      <!-- Read the config
+      <p><%= JSON.stringify(process.appConfig) %></p> -->
+
+      <div id="instructions"></div>
+    </div>
+
+    <script>
+      const cwd = `<%= process.cwd() %>`;
+      window.cwd = cwd;
+    </script>
+    <script src="assets/js/scripts.js" async defer></script>
+  </body>
+</html>
