@@ -1,6 +1,3 @@
-# node-express-ts-server
-A Node.js, Express.js and typescript web server
-
 # Node.js Express.js TypeScript Web Server Scaffold
 
 This repository provides a scaffold for building a Node.js web server using Express.js framework with TypeScript.
