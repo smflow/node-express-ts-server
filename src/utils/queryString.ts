@@ -1,6 +1,7 @@
 export class QueryString {
   static isNumber<E extends string>(val: E) {
-    return !Number.isNaN(Number(val));
+    const cv = Number(val);
+    return !Number.isNaN(cv) && isFinite(cv);
   }
   static isBoolean<E extends string>(val: E) {
     const e = val.toLowerCase();
